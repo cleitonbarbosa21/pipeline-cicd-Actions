@@ -25,7 +25,7 @@ jobs:
           cleitonbarbosa21/aula-primeira-pipeline:latest 
   CALL-CD:
     needs: [CI]
-    uses: cleitonbarbosa21/k8s-cd-teste/.github/workflows/cd.yaml@main
+    uses: cleitonbarbosa21/.github/workflows/cd.yaml@main
     with: 
       manifests: |
         k8s/deployment.yaml
