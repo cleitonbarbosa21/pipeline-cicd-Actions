@@ -2,7 +2,7 @@
 
 Este projeto utiliza uma pipeline de **CI/CD automatizada com GitHub Actions**, integrada a um **cluster Kubernetes hospedado na DigitalOcean.
 
-📁 Estrutura do projeto
+### 📁 Estrutura do Projeto
 .
 ├── Dockerfile
 ├── k8s/
