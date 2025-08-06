@@ -21,8 +21,8 @@ jobs:
         file: ./src/Dockerfile
         push: true
         tags: | 
-          cleitonbarbosa21/aula-primeira-pipeline:v${{ github.run_number }} 
-          cleitonbarbosa21/aula-primeira-pipeline:latest 
+          cleitonbarbosa21/pipeline-cicd-Actions:v${{ github.run_number }} 
+          cleitonbarbosa21/pipeline-cicd-Actions:latest 
   CALL-CD:
     needs: [CI]
     uses: cleitonbarbosa21/.github/workflows/cd.yaml@main
@@ -30,7 +30,7 @@ jobs:
       manifests: |
         k8s/deployment.yaml
       images: |
-        cleitonbarbosa21/aula-primeira-pipeline:v${{ github.run_number }} 
+        cleitonbarbosa21/pipeline-cicd-Actions:v${{ github.run_number }} 
       repository: ${{ github.repository }}
     secrets:
       kubeconfig: ${{ secrets.K8S_CONFIG }}
