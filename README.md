@@ -5,6 +5,8 @@ Este projeto utiliza uma pipeline de **CI/CD automatizada com GitHub Actions**, 
 
 📁 Estrutura esperada
 
+```bash
+
 .
 ├── src/
     ├── Dockerfile
