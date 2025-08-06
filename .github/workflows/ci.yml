@@ -31,6 +31,6 @@ jobs:
         k8s/deployment.yaml
       images: |
         cleitonbarbosa21/pipeline-cicd-Actions:v${{ github.run_number }} 
-      repository: ${{ github.repository }}
+      #repository: ${{ github.repository }}
     secrets:
       kubeconfig: ${{ secrets.K8S_CONFIG }}
