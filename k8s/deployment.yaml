@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: cleitonbarbosa21/aula-primeira-pipeline
+        image: cleitonbarbosa21/pipeline-cicd-Actions
         ports:
         - containerPort: 5000
 --- 
