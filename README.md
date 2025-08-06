@@ -2,10 +2,10 @@
 
 Este projeto utiliza uma pipeline de **CI/CD automatizada com GitHub Actions**, integrada a um **cluster Kubernetes hospedado na DigitalOcean.
 
+```bash
+
 
 📁 Estrutura esperada
-
-```bash
 
 .
 ├── src/
