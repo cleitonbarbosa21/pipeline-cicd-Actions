@@ -5,16 +5,16 @@ Este projeto utiliza uma pipeline de **CI/CD automatizada com GitHub Actions**, 
 
 📁 Estrutura esperada
 .
-#├── src/
-#    ├── Dockerfile
-#    ├── main.go
-#    ├── go.mod
-#├── k8s/
-#│   ├── deployment.yaml
-#│   └── service.yaml
-#└── .github/
-#    └── workflows/
-#        └── deploy.yml
+├── src/
+    ├── Dockerfile
+    ├── main.go
+    ├── go.mod
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+└── .github/
+    └── workflows/
+        └── deploy.yml
 
 
 
