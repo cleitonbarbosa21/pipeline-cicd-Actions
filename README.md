@@ -18,3 +18,4 @@ Este pipeline é executado automaticamente **toda vez que um push ou pull reques
 2. **Configura o ambiente de um código simples com Go**
 3. **Executa os testes**
 4. **Build do projeto**
+5. **Deploy do projeto**
