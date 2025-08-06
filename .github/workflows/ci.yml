@@ -21,16 +21,16 @@ jobs:
         file: ./src/Dockerfile
         push: true
         tags: | 
-          fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }} 
-          fabricioveronez/aula-primeira-pipeline:latest 
+          cleitonbarbosa21/aula-primeira-pipeline:v${{ github.run_number }} 
+          cleitonbarbosa21/aula-primeira-pipeline:latest 
   CALL-CD:
     needs: [CI]
-    uses: fabricioveronez/k8s-cd-teste/.github/workflows/cd.yaml@main
+    uses: cleitonbarbosa21/k8s-cd-teste/.github/workflows/cd.yaml@main
     with: 
       manifests: |
         k8s/deployment.yaml
       images: |
-        fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }} 
+        cleitonbarbosa21/aula-primeira-pipeline:v${{ github.run_number }} 
       repository: ${{ github.repository }}
     secrets:
       kubeconfig: ${{ secrets.K8S_CONFIG }}
