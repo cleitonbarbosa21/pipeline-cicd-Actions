@@ -2,7 +2,22 @@
 
 Este projeto utiliza uma pipeline de **CI/CD automatizada com GitHub Actions**, integrada a um **cluster Kubernetes hospedado na DigitalOcean.
 
-        
+
+📁 Estrutura esperada
+.
+#├── src/
+#    ├── Dockerfile
+#    ├── main.go
+#    ├── go.mod
+#├── k8s/
+#│   ├── deployment.yaml
+#│   └── service.yaml
+#└── .github/
+#    └── workflows/
+#        └── deploy.yml
+
+
+
 ### 📦 O que está automatizado?
 
 A cada **push no branch `main`**, o GitHub Actions executa as seguintes etapas:
