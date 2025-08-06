@@ -1,4 +1,4 @@
-## ⚙️ CI/CD Pipeline com GitHub Actions
+## ⚙️ CI/CD com GitHub Actions
 
 Este projeto utiliza **GitHub Actions** para automatizar tarefas de integração contínua (CI), como instalação de dependências, build e testes automatizados.
 
